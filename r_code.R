@@ -190,7 +190,7 @@ hist(studentized,breaks = 8,
      border="black", 
      col="blue")
 
-> Mostly evenly distributed just a alight positive tail -- let's check the skewnes and kurtosis
+  ## Mostly evenly distributed just a alight positive tail -- let's check the skewnes and kurtosis
 
 
 
