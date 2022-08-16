@@ -355,10 +355,6 @@ parameterestimates(mie_sem2, rsquare=TRUE,standardized=TRUE)[c(1:16,56:57),]
 
 ## Figure
 
-
-
-## still editing this one - need to get the labels right 
-
 icu<-resid(lm(icu_total ~ 
             sex_male + 
             age + 
@@ -394,8 +390,7 @@ a<-ggplot(dat,aes(x=icu,y=comp)) +
   scale_y_continuous(my_y_titlea, limits = c(-4,3), n.breaks = 4, labels = c("7.5","10","12.5","15","17.5")) + #, n.breaks = 4, labels = c("7.5","10","12.5","15","17.5")
   labs(title = TeX("$\\;$  $\\textit{R^2} = $\\textit{0.166^*}"))+
   theme(axis.text=element_text(size=rel(1.1)),axis.title=element_text(size=17),title =element_text(size=17))
-#+ylim(-4,3)
-# + scale_y_continuous(my_y_titlea,n.breaks =  5, labels = c("200","600","1000","1400","1800")
+
 
 b<-ggplot(dat,aes(x=icu,y=basic)) +
   geom_smooth(method="lm",col="black") +
